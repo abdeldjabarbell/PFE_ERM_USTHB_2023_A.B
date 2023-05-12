@@ -1,0 +1,1398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+/* ----------------------------------navebar ------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+   
+header{
+
+    height: 100%;
+    width: 100%;
+    background-image: url(img/pv\ pv.jpg) repeat =none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 20s alternate infinite ease-in-out;
+    background-attachment: fixed;
+    overflow: hidden;
+
+
+}
+@keyframes change {
+    0%{
+        background-image: url(img/pv\ b.jpg) ;
+    }
+    50%{
+        background-image: url(img/backo.jpg);
+    }
+    100%{
+        background-image: url(img/pv\ b.jpg);
+  
+    }
+    
+}
+
+#khat_top{
+
+    position: relative;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(2, 2, 43, 0.427);
+    backdrop-filter: blur(7px); 
+}
+#khat_top .kha_t_top {
+    width: 70%;
+    height: 5px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.342);
+    margin: 10px;
+}
+
+
+
+/*--------------------------------- scrol -----------------------------------*/
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.342);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 170, 0, 0.606);
+    transition: 0.6s;
+
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(255, 170, 0);
+
+}
+
+
+
+/*--------------------------------- scrol -----------------------------------*/
+/*--------------------------------- nav -----------------------------------*/
+
+.csp_p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+
+.csp_p .background_project{
+    position: relative;
+    width: 95%;
+    height: 100%;
+    left: 0;
+    transition: 0.5s;
+
+
+}
+
+.csp_p .btn_mnu{
+    position: fixed;
+    width:5%;
+    height: 100%;
+    background-color: rgba(2, 2, 43, 0.7);
+    right: 0px;
+    transition: 0.5s;
+}
+
+.csp_p .sections_m{
+    position: fixed;
+    width:20%;
+    height: 100%;
+    background-color: rgba(2, 2, 43, 0.7);
+    transition: 0.5s;
+    right: -20%;
+    transition: 0.5s;
+
+}
+.csp_p .sections_m .scrol_m {
+    position: absolute;
+    width:89%;
+    height: 86%;
+    background-color: rgba(2, 2, 43, 0.7);
+    transition: 0.5s;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-top: 30px;
+
+}
+.sections_m .scrol_m ul{
+    margin: 20px;
+    padding-top: 20px;
+}
+.sections_m .scrol_m ul a{
+    padding-top: 20px;
+    color: white;
+    transition: 0.3s;
+}
+.sections_m .scrol_m ul a:hover{
+    padding-top: 20px;
+    color: rgb(255, 170, 0);
+    font-size: 15px;
+}
+.csp_p .sectionsM_check{
+    right: 0%;
+
+}
+.csp_p .icon_check{
+    right:20%;
+
+}
+.csp_p .pro_check{
+    left: -20%;
+}
+
+
+
+#menubtn {
+    padding: 10px;
+    margin-top:20px ;
+
+
+}
+#returnbtn {
+    margin-top: 100px;
+    padding: 10px;
+
+
+
+}
+
+/*--------------------------------- nav -----------------------------------*/
+
+
+/*------------ plase 1-----------------*/
+.locations{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.locations .backgroundPlace1{
+    height: 100%;
+    width: 50%;
+    position: relative;  
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.locations .backgroundPlace1 .Name-location-1{
+    background-color: rgba(2, 2, 43, 0.427);
+    padding: 10px;
+    font-family: bold;
+    font-size: 30px;
+}
+.locations .backgroundPlace1 .Name-location-1 input{
+    padding: 6px;
+    width: 50%;
+    font-size: 20px;
+    font-family: bold;
+    color: black;
+
+}
+
+.locations .backgroundPlace1 h3{
+    position:relative;
+    justify-content: center;
+    color: black;
+}
+
+.locations .backgroundPlace1 .place-1-data-1-2-3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+
+}
+/*------------ plase 1 DATABASE    1     -----------------*/
+
+.locations .backgroundPlace1 .place-1-data-1-2-3 .database1{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+.locations .backgroundPlace1 .database1 .NDB1{
+   position: relative;
+   background-color: rgba(192, 192, 192, 0.548);
+   border: 2px solid black;
+   color: white;
+   padding: 5px;
+
+}
+.locations .backgroundPlace1 .database1 .NDB1 input{
+    position: relative;
+    width: 40%;
+    padding: 10px;
+    color: black;
+
+    
+ }
+ .locations .backgroundPlace1 .database1 .NDB1 label{
+    position: relative;
+    padding: 10px;
+    font-size: smaller;
+    width: 20%;
+    
+    
+ }
+.locations .backgroundPlace1 .database1 .NDB1 h3{
+    position: relative;   
+    color: white;
+ }
+
+
+
+
+/*-----div table input------*/
+
+
+.locations .backgroundPlace1 .database1 .jan{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.813);
+    font-family: bold;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+
+    
+
+}
+.locations .backgroundPlace1 .database1 .jan label{
+    position: relative;
+    width: 20%;
+    
+
+}
+.locations .backgroundPlace1 .database1 .jan input{
+    position: relative;
+    width: 30%;
+
+}
+.locations .backgroundPlace1 .database1 .jan samp{
+    position: relative;
+    width: 20%;
+   
+
+}
+
+
+.locations .backgroundPlace1 .database1 .feb{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.353);
+    color: white;
+    font-family: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    
+
+}
+.locations .backgroundPlace1 .database1 .feb label{
+    position: relative;
+    width: 20%;
+
+}
+.locations .backgroundPlace1 .database1 .feb input{
+    position: relative;
+    width: 30%;
+    color: black;
+
+}
+.locations .backgroundPlace1 .database1 .feb samp{
+    position: relative;
+    width: 20%;
+
+}
+
+
+/*-----div table input------*/
+
+/*------------ plase 1 DATABASE    1     -----------------*/
+
+/*------------ plase 1 DATABASE    2     -----------------*/
+
+
+.locations .backgroundPlace1 .place-1-data-1-2-3 .database2{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 0, 102, 0.173);
+    justify-content: space-between;
+}
+
+
+.locations .backgroundPlace1 .place-1-data-1-2-3 .database2{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+.locations .backgroundPlace1 .database2 .NDB2{
+   position: relative;
+   background-color: rgba(192, 192, 192, 0.548);
+   border: 2px solid black;
+   color: white;
+   padding: 5px;
+
+}
+.locations .backgroundPlace1 .database2 .NDB2 input{
+    position: relative;
+    width: 40%;
+    padding: 10px;
+    color: black;
+
+    
+ }
+ .locations .backgroundPlace1 .database2 .NDB2 label{
+    position: relative;
+    padding: 10px;
+    font-size: smaller;
+    width: 20%;
+    
+    
+ }
+.locations .backgroundPlace1 .database2 .NDB2 h3{
+    position: relative;   
+    color: white;
+ }
+
+
+
+
+/*-----div table input------*/
+
+
+.locations .backgroundPlace1 .database2 .jan{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.813);
+    font-family: bold;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+
+    
+
+}
+.locations .backgroundPlace1 .database2 .jan label{
+    position: relative;
+    width: 20%;
+    
+
+}
+.locations .backgroundPlace1 .database2 .jan input{
+    position: relative;
+    width: 30%;
+
+}
+.locations .backgroundPlace1 .database2 .jan samp{
+    position: relative;
+    width: 20%;
+   
+
+}
+
+
+.locations .backgroundPlace1 .database2 .feb{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.353);
+    color: white;
+    font-family: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    
+
+}
+.locations .backgroundPlace1 .database2 .feb label{
+    position: relative;
+    width: 20%;
+
+}
+.locations .backgroundPlace1 .database2 .feb input{
+    position: relative;
+    width: 30%;
+    color: black;
+
+
+}
+.locations .backgroundPlace1 .database .feb samp{
+    position: relative;
+    width: 20%;
+
+}
+
+
+/*-----div table input------*/
+
+
+/*------------ plase 1 DATABASE    2     -----------------*/
+
+
+/*--------------------------------------- les sites -----------------------------------*/
+
+ /*--------------------------------------- submit-btn -----------------------------------*/
+
+
+
+ #submit- .submit-btn{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: center;
+
+ }
+ button{
+    padding: 15px 40px;
+    border-radius: 10px;
+    background: linear-gradient(90deg ,rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ,rgba(0, 46, 0, 0.45),rgba(19, 56, 0, 0.45),rgba(0, 74, 2, 0.45),rgba(0, 39, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45) );
+    background-size: 400%;
+    animation: animat 10s linear infinite;
+    color: white;
+    font-size: larger;
+    margin:10px;
+    cursor: pointer;
+
+}
+@keyframes animat {
+    0%{
+        background-position: 0%;
+    }
+    
+    100%{
+        background-position: 400%;
+    }
+    
+    
+}
+button:active {
+    padding: 15px 40px;
+    border-radius: 10px;
+    background-color: #ff5100;
+    background-size: 400%;
+    color: white;
+    font-size: larger;
+    margin:10px;}
+
+
+.fa-flash:before {
+   content: "\f067";
+   animation: 0.5s 
+ }
+ 
+ .fa-check:before {
+   content: "\f068";
+ }
+
+
+
+ /*--------------------------------------- submit-btn -----------------------------------*/
+
+ #space{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+ }
+
+ /*--------------------------------------- khat -----------------------------------*/
+
+ .khat{
+
+    position: relative;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.657);   
+    backdrop-filter: blur(7px); 
+}
+.khat .kha_t {
+    width: 70%;
+    height: 5px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.342);
+    margin: 10px;
+}
+
+ /*--------------------------------------- khat -----------------------------------*/
+ 
+ /*--------------------------------------- ALL data daxhbord 1 -----------------------------------*/
+
+
+ #tab-all-premier-data{
+    height: 60%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.657);   
+    background-size: cover;
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    font-family: bold;
+    font-size: 20px;
+
+ }
+ 
+
+h2 {
+	text-align: center;
+	margin-top: 20px;
+    
+    
+}
+
+.name-section {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+table {
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid black;
+	text-align: center;
+    background-color: rgba(255, 255, 255, 0.725);
+}
+
+th {
+	background-color: #ccc;
+}
+ /*--------------------------------------- ALL data daxhbord 1 -----------------------------------*/
+
+
+ /*--------------------------------------- graph  1 -----------------------------------*/
+ #graphone{
+    position: relative;
+    height: 86%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.657);   
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+ }
+
+
+
+
+ #graphone .background-graphone {
+    position: relative;
+    height: 100%;
+    width: 80%;
+
+ }
+ #graphone .background-text-graphone {
+    position: relative;
+    height: 100px;
+    width: 20%;
+
+ }
+ .aa{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(7px);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column ;
+
+}
+
+
+
+
+
+
+ /*--------------------------------------- graph 1 -----------------------------------*/
+
+ /*--------------------------------------- graph 2 tab 2 -----------------------------------*/
+
+
+ #tab-all-somme-data-anuell{
+    position: relative;
+    height: 150%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: bold;
+    font-size: 20px;
+
+ }
+
+ #tab-all-somme-data-anuell .tableau-all-data-anuell{
+    position: relative;
+    width: 40%;
+    justify-content: center;
+ }
+ #tab-all-somme-data-anuell .background-graph-annual-DNI{
+    position: relative;
+    width: 60%;
+ }
+
+
+ /*------annual DNI data daxhbord 2 --------*/
+
+.notation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+ 
+ .notation .squaresD1P1{
+    position: relative;
+ 
+ }
+ .D2P1notation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+ }
+ .D2P1notation .squaresD2P1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+   flex-direction: row;
+    
+ 
+ }
+
+
+ .D1P2notation{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .D1P2notation .squaresD1P2{
+    position: absolute;
+ 
+ }
+ .D2P2notation{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.D2P2notation .squaresD2P2{
+    position: absolute;
+ 
+ }
+ #tab-all-somme-data-anuell .tableau-all-data-anuell .khattt{
+    width: 80%;
+    height: 6px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.342);
+    margin: 10px;
+}
+
+
+
+/* evaluation bar*/
+#rate {
+    width: 400px;
+    height: 20px;
+    border-radius: 13px;
+    border: solid 2px rgb(84, 84, 84);
+    background-color: transparent;
+    
+
+}
+
+#pourcentage_rate{
+    width: 0%;
+    height: 100%;
+    border-radius: 13px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: width 10s ease-in-out;
+    
+}
+#color_rate{
+    width: 400px;
+    height: 20px;
+    border-radius: 13px;
+
+    background: linear-gradient(90deg ,
+    rgb(255, 0, 0),
+     rgb(255, 115, 0),
+     rgb(255, 229, 36),
+     rgb(85, 255, 0),
+     rgb(4, 115, 0));
+
+}
+#anima{
+    width: 100%;
+    height: 100%;
+background: linear-gradient(45deg ,
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0.818),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0)
+
+
+ );
+background-size: 400%;
+animation: animato 10s linear infinite;
+}
+
+
+/* -------------------------------  bar rat 4  ----------------------------------*/
+
+#rate1 {
+    width: 400px;
+    height: 20px;
+    border-radius: 13px;
+    border: solid 2px rgb(84, 84, 84);
+    background-color: transparent;
+    
+
+}
+
+#pourcentage_rate1 {
+    width: 0%;
+    height: 100%;
+    border-radius: 13px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: width 10s ease-in-out;
+    
+}
+#color_rate1 {
+    width: 400px;
+    height: 20px;
+    border-radius: 13px;
+
+    background: linear-gradient(90deg ,
+    rgb(255, 0, 0),
+     rgb(255, 115, 0),
+     rgb(255, 229, 36),
+     rgb(85, 255, 0),
+     rgb(4, 115, 0));
+
+}
+#anima1 {
+    width: 100%;
+    height: 100%;
+background: linear-gradient(45deg ,
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0.818),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0)
+
+
+ );
+background-size: 400%;
+animation: animato 10s linear infinite;
+}
+
+
+/* -------------------------------  bar rat 4  ----------------------------------*/
+
+#rate2 {
+    width: 400px;
+    height: 20px;
+    border-radius: 13px;
+    border: solid 2px rgb(84, 84, 84);
+    background-color: transparent;
+    
+
+}
+
+#pourcentage_rate2 {
+    width: 0%;
+    height: 100%;
+    border-radius: 13px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: width 10s ease-in-out;
+    
+}
+#color_rate2 {
+    width: 400px;
+    height: 20px;
+    border-radius: 13px;
+
+    background: linear-gradient(90deg ,
+    rgb(255, 0, 0),
+     rgb(255, 115, 0),
+     rgb(255, 229, 36),
+     rgb(85, 255, 0),
+     rgb(4, 115, 0));
+
+}
+#anima2 {
+    width: 100%;
+    height: 100%;
+background: linear-gradient(45deg ,
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0.818),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0)
+
+
+ );
+background-size: 400%;
+animation: animato 10s linear infinite;
+}
+
+
+/* -------------------------------  bar rat 4  ----------------------------------*/
+
+#rate3 {
+    width: 400px;
+    height: 20px;
+    border-radius: 13px;
+    border: solid 2px rgb(84, 84, 84);
+    background-color: transparent;
+    
+
+}
+
+#pourcentage_rate3 {
+    width: 0%;
+    height: 100%;
+    border-radius: 13px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: width 10s ease-in-out;
+    
+}
+#color_rate3 {
+    width: 400px;
+    height: 20px;
+    border-radius: 13px;
+
+    background: linear-gradient(90deg ,
+    rgb(255, 0, 0),
+     rgb(255, 115, 0),
+     rgb(255, 229, 36),
+     rgb(85, 255, 0),
+     rgb(4, 115, 0));
+
+}
+#anima3 {
+    width: 100%;
+    height: 100%;
+background: linear-gradient(45deg ,
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0.818),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0),
+rgba(255, 255, 255, 0)
+
+
+ );
+background-size: 400%;
+animation: animato 10s linear infinite;
+}
+
+
+@keyframes animato {
+0%{
+    background-position: 400%;
+}
+
+100%{
+    background-position: 0%;
+}}
+
+
+/* evaluation bar*/
+
+
+h2 {
+	text-align: center;
+	margin-top: 20px;
+    
+    
+}
+
+.name-section {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+table {
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid black;
+	text-align: center;
+    background-color: rgba(255, 255, 255, 0.725);
+}
+
+th {
+	background-color: #ccc;
+}
+ /*------annual DNI data daxhbord 2 --------*/
+
+
+  /*--------------------------------------- graph 2 tab 2 -----------------------------------*/
+
+
+/*--------------------------------------- MAX DNI -----------------------------------*/
+
+
+#valeurMAX{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: bold;
+    font-size: 20px;
+}
+ #valeurMAX .background_graph_valeurMAX{
+    position: relative;
+    width: 60%;
+    justify-content: center;
+ }
+ #valeurMAX .background_tabl_valeurMAX{
+    position: relative;
+    width: 40%;
+    justify-content: center;
+ }
+
+
+
+
+/*--------------------------------------- MAX DNI -----------------------------------*/
+
+/*--------------------------------------- MIN DNI -----------------------------------*/
+#valeurMIN{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: bold;
+    font-size: 20px;
+}
+ #valeurMIN .background_graph_valeurMIN{
+    position: relative;
+    width: 60%;
+    justify-content: center;
+ }
+ #valeurMIN .background_tabl_valeurMIN{
+    position: relative;
+    width: 40%;
+    justify-content: center;
+ }
+
+/*--------------------------------------- MIN DNI -----------------------------------*/
+
+
+
+/*--------------------------------------- extent absolute & extent relative   -----------------------------------*/
+
+
+#etandtu{
+    height: 89%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: bold;
+    font-size: 20px;
+}
+ #etandtu .etandu_absolute{
+    position: relative;
+    width: 50%;
+    justify-content: center;
+ }
+ #etandtu .etandu_absolute table{
+    position: relative;
+    margin-left: 100px;
+ }
+
+
+ #etandtu .etandu_relative{
+    position: relative;
+    width: 50%;
+    justify-content: center;
+ }
+ #etandtu .etandu_relative table{
+    position: relative;
+    margin-left: 100px; }
+
+ 
+
+
+
+/*--------------------------------------- extent absolute & extent relative  -----------------------------------*/
+/*--------------------------------------- saisons   -----------------------------------*/
+
+#saisonn{
+    height: 110%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: bold;
+    font-size: 20px;
+}
+
+  /*--------------------------------------- khatperp */
+
+#saisonn .khatperp {
+    width: 20px;
+    height: 100%;
+    padding: 5px;
+}
+#saisonn .khatperp .khaTP {
+    width: 5px;
+    height: 70%;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.342);
+    margin: 10px;
+}
+
+ 
+#saisonn .location1{
+    position: relative;
+    width: 50%;
+    justify-content: center;
+}
+#saisonn .location1 table{
+    position: relative;
+    margin-left: 160px;
+}
+#saisonn .location2{
+    position: relative;
+    width: 50%;
+    justify-content: center;
+}
+#saisonn .location2 table{
+    position: relative;
+    margin-left: 160px;
+}
+
+
+/*--------------------------------------- saisons   -----------------------------------*/
+
+/*--------------------------------------- dcenarios   -----------------------------------*/
+
+#scinariolocation1{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(7px);
+    justify-content: center;
+
+}
+.table_senarios1 {
+    margin: 30px;
+}
+.Name-location-1-senarios i{
+    font-size: 30px;
+    font-family: bold;
+    padding: 30px;
+
+}
+.senarios1-graph{
+    width: 80%;
+    height: 80%;
+    padding: 40px;
+}
+
+/* location 2 scenarios */
+#scinariolocation2{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(7px);
+    justify-content: center;
+
+}
+.table_senarios2 {
+    margin: 30px;
+}
+.Name-location-2-senarios i{
+    font-size: 30px;
+    font-family: bold;
+    padding: 30px;
+
+}
+.senarios2-graph{
+    width: 80%;
+    height: 80%;
+    padding: 40px;
+}
+
+
+/* ----------------------------------------------------new data------------------------*/
+
+
+#New_data{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(7px);
+    justify-content: center;
+
+}
+.table_new_data {
+    margin: 30px;
+}
+.new_data_name i{
+    font-size: 30px;
+    font-family: bold;
+    padding: 30px;
+
+}
+.graph_new_data{
+    width: 80%;
+    height: 80%;
+    padding: 40px;
+}
+
+/* --------------------------somme anuell---------*/
+#n_d_somme_anuelle{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(7px);
+    justify-content: center;
+
+}
+.background_n_d_anuell{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.background_n_d_anuell .table_n_d_anuell{
+width: 40%;
+height: 100%;
+padding: 40px;
+}
+.background_n_d_anuell .graph_n_d_anuell{
+    width: 60%;
+    height: 100%;
+}
+#n_d_somme_anuelle i{
+    font-size: 30px;
+    font-family: bold;
+    padding: 30px;
+
+}
+.graph_new_data{
+    width: 80%;
+    height: 80%;
+}
+.notation_n_d_anuell{
+    font-size: 20px;
+    font-family: bold;
+    padding: 10px;
+}
+
+
+
+
+
+ /*classement ----------------------------*/
+ 
+#classement{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    font-family: bold;
+    font-size: 20px;
+
+}
+.rankin{
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(90deg ,rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ,rgba(0, 46, 0, 0.45),rgba(19, 56, 0, 0.45),rgba(0, 74, 2, 0.45),rgba(0, 39, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45) );
+ background-size: 400%;
+ animation: animat 10s linear infinite;
+ 
+ }
+ 
+.classement1{
+    margin: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 100px;
+    background: linear-gradient(45deg ,rgba(0, 36, 36, 0.45), rgba(36, 46, 47, 0.42) ,rgba(0, 179, 255, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 36, 36, 0.45));
+    background-size: 400%;
+    animation: animat 20s linear infinite;    border-radius: 30px;
+    overflow: hidden;
+
+    
+
+}
+.namePlass1{
+
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: #f20f97;
+
+
+}
+.number1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #f2df0f;
+
+}
+.classement2{
+    margin: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 100px;
+    background-color: #0fa6f2;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+
+
+
+    
+
+}
+.namePlass2{
+
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: #f20f97;
+
+
+}
+.number2{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #f2df0f;
+
+}
+
+@keyframes animat 
+{
+    0%{
+        background-position: 0%;
+    }
+    
+    100%{
+        background-position: 400%;
+    }
+}
+

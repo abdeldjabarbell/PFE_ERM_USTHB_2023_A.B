@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profit Graph</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <h1>Profit Graph</h1>
+  <form>
+    <input type="file" id="fileInput" onchange="loadFile()" accept=".xlsx">
+  </form>
+  <div id="plot"></div>
+  <div id="result"></div>
+
+  <script>
+    function loadFile() {
+      var fileInput = document.getElementById('fileInput');
+      var file = fileInput.files[0];
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        var data = new Uint8Array(e.target.result);
+        var workbook = XLSX.read(data, { type: 'array' });
+        var sheetName = workbook.SheetNames[0];
+        var sheet = workbook.Sheets[sheetName];
+        var range = XLSX.utils.decode_range(sheet['!ref']);
+        var chartData = [];
+        for (var row = range.s.r + 1; row <= range.e.r; row++) {
+          var x = sheet[XLSX.utils.encode_cell({ r: row, c: 0 })].v;
+          var y = sheet[XLSX.utils.encode_cell({ r: row, c: 1 })].v;
+          chartData.push({ x: x, y: y });
+        }
+        plotGraph(chartData);
+      };
+      reader.readAsArrayBuffer(file);
+    }
+
+    function plotGraph(data) {
+      var xData = [];
+      var yData = [];
+      for (var i = 0; i < data.length; i++) {
+        xData.push(data[i].x);
+        yData.push(data[i].y);
+      }
+      var trace = {
+        x: xData,
+        y: yData,
+        type: 'scatter'
+      };
+      var layout = {
+        title: 'Profit Graph',
+        xaxis: {
+          title: 'Month'
+        },
+        yaxis: {
+          title: 'Profit'
+        }
+      };
+      Plotly.newPlot('plot', [trace], layout);
+    }
+  </script>
+</body>
+</html>
