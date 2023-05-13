@@ -1396,3 +1396,219 @@ padding: 40px;
     }
 }
 
+
+
+
+
+/*--------------------------------------- rankin   -----------------------------------*/
+#rating_rankin{
+    position: relative;
+    height: 86%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.657);   
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+#senarios_rankin{
+    position: relative;
+    height: 86%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.657);   
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+#rankin_raw{
+    position: relative;
+    height: 86%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.657);   
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+#rankin_frequency_bulk{
+    position: relative;
+    height: 86%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.657);   
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.development_process{
+    margin-left: 40px;
+    color: #ff0000;
+    display: flex;
+}
+.loading-circle {
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid #939393;
+    border-top-color: #00e1ff;
+    animation: spin 1s infinite linear;
+    margin-left: 10px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*classement ----------------------------*/
+ 
+#classement{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    font-family: bold;
+    font-size: 20px;
+
+}
+.av_clas{
+ position: relative;
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(90deg ,rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ,rgba(0, 46, 0, 0.45),rgba(19, 56, 0, 0.45),rgba(0, 74, 2, 0.45),rgba(0, 39, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45) );
+ background-size: 400%;
+ animation: animat 10s linear infinite;
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ }
+ .av_clas h1{
+    color: white;
+
+ }
+ .av_clas .background_classement{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+ }
+  /*classemnet*/
+
+ .av_clas .background_classement .class {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+ }
+ .av_clas .background_classement .class .class1 {
+     width: 100%;
+     height: 100%;
+
+ }
+ #number1_class {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(97, 97, 97);
+    margin-left: 30px;
+    margin-top: 5px;
+ }
+ #name1_class {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 0, 179);
+    margin-left: 30px;
+    margin-top: 5px;
+    
+
+ }
+
+ .av_clas .background_classement .class .class2 {
+    width: 100%;
+    height: 100%;
+
+}
+#number2_class {
+   position: relative;
+   width: 200px;
+   height: 300px;
+   background-color: rgb(115, 115, 115);
+   margin-right: 30px;
+   margin-top: 5px;
+}
+#name2_class {
+   position: relative;
+   width: 200px;
+   height: 100px;
+   background-color: rgb(255, 0, 179);
+   margin-right: 30px;
+   margin-top: 5px;
+
+}
+
+
+
+
+
+ /*discreption*/
+ .av_clas .background_classement .discreption {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 0, 221, 0);
+ }
+ 
+
