@@ -1290,103 +1290,96 @@ padding: 40px;
     font-family: bold;
     padding: 10px;
 }
-
-
-
-
-
- /*classement ----------------------------*/
- 
-#classement{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.67);
-    backdrop-filter: blur(7px);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
+/*classment par notation*/
+.ranking_by_rating{
     font-family: bold;
-    font-size: 20px;
+}
+
+.classment_pa_notation{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    border-radius: 16px;
+    border: solid 2px black;
+    overflow: hidden;
 
 }
-.rankin{
- width: 100%;
- height: 100%;
- background: linear-gradient(90deg ,rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ,rgba(0, 46, 0, 0.45),rgba(19, 56, 0, 0.45),rgba(0, 74, 2, 0.45),rgba(0, 39, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45) );
- background-size: 400%;
- animation: animat 10s linear infinite;
- 
- }
- 
-.classement1{
-    margin: 30px;
+.loca1_classement{
     position: relative;
+    width: 50%;
+    height: 200px;
     display: flex;
-    justify-content: space-between;
-    width: 600px;
-    height: 100px;
-    background: linear-gradient(45deg ,rgba(0, 36, 36, 0.45), rgba(36, 46, 47, 0.42) ,rgba(0, 179, 255, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 36, 36, 0.45));
+    flex-direction: column-reverse;
+}
+#n_loca1_classement_{
+    position: relative; 
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(90deg ,rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ,rgba(0, 46, 0, 0.45),rgba(19, 56, 0, 0.45),rgba(0, 74, 2, 0.45),rgba(0, 39, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45) );
     background-size: 400%;
-    animation: animat 20s linear infinite;    border-radius: 30px;
-    overflow: hidden;
-
+    animation: animatt0 15s linear infinite;
+    color: black;
+    font-family: bold;
+    justify-content: center;
+    align-items: center;
     
-
 }
-.namePlass1{
-
-    position: relative;
-    width: 200px;
-    height: 100px;
-    background-color: #f20f97;
-
-
-}
-.number1{
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: #f2df0f;
-
-}
-.classement2{
-    margin: 30px;
+#class_loca1_classement_{
     position: relative;
     display: flex;
-    justify-content: space-between;
-    width: 600px;
-    height: 100px;
-    background-color: #0fa6f2;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    overflow: hidden;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: bold;
 
+}
+.loca2_classement{
+    position: relative;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 5px;
 
-
+}
+#n_loca2_classement_{
+    position: relative; 
+    display: flex;
+    right: 0px;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(90deg ,rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ,rgba(0, 46, 0, 0.45),rgba(19, 56, 0, 0.45),rgba(0, 74, 2, 0.45),rgba(0, 39, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45) );
+    background-size: 400%;
+    animation: animattI 15s linear infinite;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: bold;
     
-
 }
-.namePlass2{
-
+#class_loca2_classement_{
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 200px;
-    height: 100px;
-    background-color: #f20f97;
-
-
-}
-.number2{
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: #f2df0f;
+    display: flex;
+    right: 0px;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: bold;
 
 }
 
-@keyframes animat 
-{
+
+@keyframes animatt0 {
     0%{
         background-position: 0%;
     }
@@ -1394,11 +1387,20 @@ padding: 40px;
     100%{
         background-position: 400%;
     }
+    
+    
 }
-
-
-
-
+@keyframes animattI {
+    0%{
+        background-position: 0%;
+    }
+    
+    100%{
+        background-position: 400%;
+    }
+    
+    
+}
 
 /*--------------------------------------- rankin   -----------------------------------*/
 #rating_rankin{
@@ -1414,65 +1416,125 @@ padding: 40px;
     display: flex;
     flex-direction: column;
 }
-#senarios_rankin{
+.rankin_frequency_bulk_backgound{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+.rankin_frequency_table_data{
     position: relative;
-    height: 86%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.657);   
-    backdrop-filter: blur(7px);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+    width: 40%;
+    height: 200px;
+
 }
-#rankin_raw{
+.rankin_frequency_rank_data{
     position: relative;
-    height: 86%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.657);   
-    backdrop-filter: blur(7px);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+    width: 50%;
+    height: 200px;
     display: flex;
-    flex-direction: column;
+    border-radius: 16px;
+    border: solid 2px black;
+    overflow: hidden;
+
 }
-#rankin_frequency_bulk{
+.rankin_frequency_rankloca1_classement{
     position: relative;
-    height: 86%;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#rankin_frequency_rankn_loca1_classement_{
+    position: relative; 
+    display: flex;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.657);   
-    backdrop-filter: blur(7px);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-.development_process{
-    margin-left: 40px;
-    color: #ff0000;
-    display: flex;
-}
-.loading-circle {
+    height: 10%;
+    background: linear-gradient(90deg ,rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ,rgba(0, 46, 0, 0.45),rgba(19, 56, 0, 0.45),rgba(0, 74, 2, 0.45),rgba(0, 39, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45) );
+    background-size: 400%;
+    animation: animatt0 15s linear infinite;
+    color: black;
+    font-family: bold;
+    justify-content: center;
+    align-items: center;
     
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 5px solid #939393;
-    border-top-color: #00e1ff;
-    animation: spin 1s infinite linear;
-    margin-left: 10px;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+}
+#rankin_frequency_rankclass_loca1_classement_{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: bold;
+
+}
+.rankin_frequency_rankloca2_classement{
+    position: relative;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 5px;
+
+}
+#rankin_frequency_rankn_loca2_classement_{
+    position: relative; 
+    display: flex;
+    right: 0px;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(90deg ,rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ,rgba(0, 46, 0, 0.45),rgba(19, 56, 0, 0.45),rgba(0, 74, 2, 0.45),rgba(0, 39, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45) );
+    background-size: 400%;
+    animation: animattI 15s linear infinite;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: bold;
+    
+}
+#rankin_frequency_rankclass_loca2_classement_{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    right: 0px;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: bold;
+
+}
+
+
+@keyframes animatt0 {
+    0%{
+        background-position: 0%;
+    }
+    
+    100%{
+        background-position: 400%;
+    }
+    
+    
+}
+@keyframes animattI {
+    0%{
+        background-position: 0%;
+    }
+    
+    100%{
+        background-position: 400%;
+    }
+    
+    
+}
 
 
 
