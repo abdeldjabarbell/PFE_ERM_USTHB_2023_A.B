@@ -1387,7 +1387,67 @@ menuSearch.addEventListener("click", function() {
 
       
 
+      //alert bar
       
+if (Nplace1 === ""){
+    alert("Please enter a valid Location name << location 1 >>");
+    return;
+  }
+  if (Nplace2 === ""){
+    alert("Please enter a valid Location name << location 2 >> ");
+    return;
+  }
+  if ((Nplace1 === Nplace2)){
+    alert("Please make sure to anter a valid name , May be you have antered the same name of locations");
+    return;
+  }
+  if (P1Ndatabase1=== ""){
+    alert("Please enter a valid DATA-BASE 1 name << "+ Nplace1 +" >>");
+    return;
+  }
+  if (P1Ndatabase2 === ""){
+    alert("Please enter a valid DATA-BASE 2 name << "+ Nplace1 +" >>");
+    return;
+  }
+  if (P2Ndatabase1=== ""){
+    alert("Please enter a valid DATA-BASE 1 name << "+ Nplace2 +" >>");
+    return;
+  }
+  if (P2Ndatabase2 === ""){
+    alert("Please enter a valid DATA-BASE 2 name << "+ Nplace2 +" >>");
+    return;
+  }
+  if (P2Ndatabase2 != P1Ndatabase2){
+    alert("Please enter the same name of the data-base 2 between location 1 & 2");
+    return;
+  }
+  if (P2Ndatabase1 != P1Ndatabase1){
+    alert("Please enter the same name of the data-base 1 between location 1 & 2");
+    return;
+  }
+ 
+
+
+  if (isNaN(D1P1december) || isNaN(D1P1november) || isNaN(D1P1october)|| isNaN(D1P1september)|| isNaN(D1P1august)|| isNaN(D1P1july)|| isNaN(D1P1june)|| isNaN(D1P1may)|| isNaN(D1P1april)|| isNaN(D1P1march)|| isNaN(D1P1february)|| isNaN(D1P1january)){
+    alert("Please enter a valid DNI.[DATA-BASE 1 "+P1Ndatabase1+"  << "+Nplace1+" >> ]...");
+    return;
+  }
+  
+  if (isNaN(D2P1january) || isNaN(D2P1november)|| isNaN(D2P1october) || isNaN(D2P1september)|| isNaN(D2P1august)|| isNaN(D2P1july)|| isNaN(D2P1june)|| isNaN(D2P1may)|| isNaN(D2P1april)|| isNaN(D2P1march)|| isNaN(D2P1february)|| isNaN(D2P1january)){
+    alert("Please enter a valid DNI.[DATA-BASE 2  "+P1Ndatabase2+" << "+Nplace1+" >> ]...");
+    return;
+  }
+
+  if (isNaN(D1P2january) || isNaN(D1P2november)|| isNaN(D1P2october)|| isNaN(D1P2september)|| isNaN(D1P2august)|| isNaN(D1P2july)|| isNaN(D1P2june)|| isNaN(D1P2may)|| isNaN(D1P2april)|| isNaN(D1P2march)|| isNaN(D1P2february)|| isNaN(D1P2january)){
+    alert("Please enter a valid DNI.[DATA-BASE 1  "+P2Ndatabase1+" << "+Nplace2+" >> ]...");
+    return;
+  }
+  if (isNaN(D2P2december) || isNaN(D2P2november)|| isNaN(D2P2october)|| isNaN(D2P2september)|| isNaN(D2P2august)|| isNaN(D2P2july)|| isNaN(D2P2june)|| isNaN(D2P2may)|| isNaN(D2P2april)|| isNaN(D2P2march)|| isNaN(D2P2february)|| isNaN(D2P2january)){
+    alert("Please enter a valid DNI.[DATA-BASE 2  "+P2Ndatabase2+" << "+Nplace2+" >> ]...");
+    return;
+  }
+
+
 
       var schedule = document.getElementById("schedule");
       schedule.innerHTML = "";
