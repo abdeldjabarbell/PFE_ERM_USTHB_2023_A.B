@@ -3596,6 +3596,7 @@ var ctx = document.getElementById("graph_content_n_d_anuell").getContext("2d");
 
 
 
+
 //notation___--------------------------------------------------------------
 
 
@@ -3609,21 +3610,268 @@ notation_L2 = (n_D1P2 + n_D2P2)/2;
 n_moy_P1.innerHTML="the middle evaluation of  -"+Nplace1+"-  is : ( "+notation_L1+"/4 )";
 n_moy_P2.innerHTML="the middle evaluation of  -"+Nplace2+"-  is : ( "+notation_L2+"/4 )";
 
+if(notation_L1>notation_L2){
+
+}
+//classement par notation
+var n_loca2_classement_ = document.getElementById("n_loca2_classement_");
+var n_loca1_classement_ = document.getElementById("n_loca1_classement_");
+
+var numero_de_location1 = document.getElementById("numero_de_location1");
+var le_nome_loca_1 = document.getElementById("le_nome_loca_1");
+
+var numero_de_location2 = document.getElementById("numero_de_location2");
+var le_nome_loca_2 = document.getElementById("le_nome_loca_2");
+
+
+
+if(notation_L1 > notation_L2){
+xx=50;
+yy=90;
+le_nome_loca_2.innerHTML=Nplace2
+numero_de_location2.innerHTML="RANK -2-"
+
+le_nome_loca_1.innerHTML=Nplace1
+numero_de_location1.innerHTML="RANK -1-"
+
+
+}
+if(notation_L1 < notation_L2){
+yy=50;
+xx=90;
+le_nome_loca_2.innerHTML=Nplace2
+numero_de_location2.innerHTML="RANK -1-"
+
+le_nome_loca_1.innerHTML=Nplace1
+numero_de_location1.innerHTML="RANK -2-"
+}
+if(notation_L1 === notation_L2){
+xx=50;
+yy=50;
+le_nome_loca_2.innerHTML=Nplace2
+numero_de_location2.innerHTML="RANK -1-"
+
+le_nome_loca_1.innerHTML=Nplace1
+numero_de_location1.innerHTML="RANK -1-"
+}
+n_loca2_classement_.style.height = xx +"%";
+n_loca1_classement_.style.height = yy +"%";
+
+
+
 
 ///////////////////////////////////-RANKIN-----------------------------------------------
+var d1_n2=2;
+var d1_n1=1;
 
 
-var SD1P1 = n1;
 
-if (SD2P1>SD1P1){
-  SD2P1 = n1;
+
+if(SD1P2<SD1P1){
+  class_SD1P1 = d1_n1;
+  class_SD1P2 = d1_n2;
+   
+  var aaa=1;
+}else{
+    var aaa=0;
 }
-if (SD1P1=n1){
-SD1P1 = clas1;
+
+if (SD1P2>SD1P1){
+  class_SD1P1 = d1_n2;
+  class_SD1P2 = d1_n1;
+   
+  var bbb=1
+ 
+  
+}else{
+  var bbb=0
+ 
 }
-if (SD2P1=n1){
-SD2P1 = clas1;
+
+if (SD1P2===SD1P1){
+  class_SD1P1 = d1_n1;
+  class_SD1P2 = d1_n1;
+
+  var ccc=1;
+}else{
+  var ccc=0;
 }
+ 
+
+
+////////
+
+
+var d2_n2=2;
+var d2_n1=1;
+
+
+if(SD2P2<SD2P1){
+  class_SD2P1 = d2_n1;
+  class_SD2P2 = d2_n2;
+   
+  var ddd=1;
+}else{
+    var ddd=0;
+}
+
+if (SD2P2>SD2P1){
+  class_SD2P1 = d2_n2;
+  class_SD2P2 = d2_n1;
+   
+  var eee=1;
+ 
+  
+}else{
+  var eee=0;
+}
+
+if (SD2P2===SD2P1){
+  class_SD2P1 = d2_n1;
+  class_SD2P2 = d2_n1;
+  fff=1;
+}else{
+  var fff=0;
+}
+
+n_clas_P1_1 = fff+ddd+ccc+aaa;
+n_clas_P1_2 = eee+bbb;
+n_clas_P2_1 = fff+eee+ccc+bbb;
+n_clas_P2_2 = aaa+ddd;
+
+p_n_clas_P1_1=(n_clas_P1_1/2)*100;
+p_n_clas_P1_2=(n_clas_P1_2/2)*100;
+p_n_clas_P2_1=(n_clas_P2_1/2)*100;
+p_n_clas_P2_2=(n_clas_P2_2/2)*100;
+
+avr_n_clas_P1=(class_SD1P1+class_SD2P1)/2;
+avr_n_clas_P2=(class_SD2P2+class_SD1P2)/2;
+
+revers_P1=(2-avr_n_clas_P1);
+revers_P2=(2-avr_n_clas_P2);
+
+p_rank_1=1;
+p_rank_2=2;
+
+
+if(revers_P1>revers_P2){
+  rank_p1=p_rank_1;
+  rank_p2=p_rank_2;
+
+}
+if(revers_P1<revers_P2){
+  rank_p1=p_rank_2;
+  rank_p2=p_rank_1;
+}
+if(revers_P1==revers_P2){
+  rank_p1=p_rank_1;
+  rank_p2=p_rank_1;
+}
+
+
+
+
+//rank_rankin_n_clas_P1_1
+
+var rankin_frequency_rankn_loca2_classement_ = document.getElementById("rankin_frequency_rankn_loca2_classement_");
+var rankin_frequency_rankn_loca1_classement_ = document.getElementById("rankin_frequency_rankn_loca1_classement_");
+
+var rankin_frequency_ranknumero_de_location1 = document.getElementById("rankin_frequency_ranknumero_de_location1");
+var rankin_frequency_rankle_nome_loca_1 = document.getElementById("rankin_frequency_rankle_nome_loca_1");
+
+var rankin_frequency_ranknumero_de_location2 = document.getElementById("rankin_frequency_ranknumero_de_location2");
+var rankin_frequency_rankle_nome_loca_2 = document.getElementById("rankin_frequency_rankle_nome_loca_2");
+
+var DATA1 = document.getElementById("DATA1");
+var DATA2 = document.getElementById("DATA2");
+
+DATA1.innerHTML=P1Ndatabase1
+DATA2.innerHTML=P1Ndatabase2
+
+
+
+
+if(rank_p1>rank_p2){
+xxx=50;
+yyy=90;
+rankin_frequency_rankle_nome_loca_2.innerHTML=Nplace2
+rankin_frequency_ranknumero_de_location2.innerHTML="RANK -2-"
+
+rankin_frequency_rankle_nome_loca_1.innerHTML=Nplace1
+rankin_frequency_ranknumero_de_location1.innerHTML="RANK -1-"
+
+
+}
+if(rank_p1>rank_p2){
+yyy=50;
+xxx=90;
+rankin_frequency_rankle_nome_loca_2.innerHTML=Nplace2
+rankin_frequency_ranknumero_de_location2.innerHTML="RANK -1-"
+
+rankin_frequency_rankle_nome_loca_1.innerHTML=Nplace1
+rankin_frequency_ranknumero_de_location1.innerHTML="RANK -2-"
+}
+if(rank_p1==rank_p2){
+xxx=50;
+yyy=50;
+rankin_frequency_rankle_nome_loca_2.innerHTML=Nplace2
+rankin_frequency_ranknumero_de_location2.innerHTML="RANK -1-"
+
+rankin_frequency_rankle_nome_loca_1.innerHTML=Nplace1
+rankin_frequency_ranknumero_de_location1.innerHTML="RANK -1-"
+}
+rankin_frequency_rankn_loca2_classement_.style.height = xxx +"%";
+rankin_frequency_rankn_loca1_classement_.style.height = yyy +"%";
+
+
+
+
+
+
+var rankin_frequency_table_content = document.getElementById("rankin_frequency_table_content");
+    rankin_frequency_table_content.innerHTML = "";
+
+
+        var f_ran_row__R1 = rankin_frequency_table_content.insertRow();
+        var f_ran_cll1__R1 = f_ran_row__R1.insertCell(0);
+        var f_ran_cll1__R2 = f_ran_row__R1.insertCell(1);
+        var f_ran_cll1__R3 = f_ran_row__R1.insertCell(2);
+        var f_ran_cll1__R4 = f_ran_row__R1.insertCell(3);
+        var f_ran_cll1__R5 = f_ran_row__R1.insertCell(4);
+        var f_ran_cll1__R6 = f_ran_row__R1.insertCell(5);
+        var f_ran_cll1__R7 = f_ran_row__R1.insertCell(6);
+
+        f_ran_cll1__R1.innerHTML = Nplace1 ;
+        f_ran_cll1__R2.innerHTML = class_SD1P1 ;
+        f_ran_cll1__R3.innerHTML = class_SD2P1 ;
+        f_ran_cll1__R4.innerHTML = p_n_clas_P1_1.toFixed(2)  + "  (%) ";
+        f_ran_cll1__R5.innerHTML = p_n_clas_P1_2.toFixed(2)  + "  (%) ";
+        f_ran_cll1__R6.innerHTML = avr_n_clas_P1;
+        f_ran_cll1__R7.innerHTML = rank_p1;
+
+
+
+        var f_ran_row__R2 = rankin_frequency_table_content.insertRow();
+        var f_ran_cll2__R1 = f_ran_row__R2.insertCell(0);
+        var f_ran_cll2__R2 = f_ran_row__R2.insertCell(1);
+        var f_ran_cll2__R3 = f_ran_row__R2.insertCell(2);
+        var f_ran_cll2__R4 = f_ran_row__R2.insertCell(3);
+        var f_ran_cll2__R5 = f_ran_row__R2.insertCell(4);
+        var f_ran_cll2__R6 = f_ran_row__R2.insertCell(5);
+        var f_ran_cll2__R7 = f_ran_row__R2.insertCell(6);
+
+        f_ran_cll2__R1.innerHTML = Nplace2 ;
+        f_ran_cll2__R2.innerHTML = class_SD1P2 ;
+        f_ran_cll2__R3.innerHTML = class_SD2P2 ;
+        f_ran_cll2__R4.innerHTML = p_n_clas_P2_1.toFixed(2)  + "  (%) ";
+        f_ran_cll2__R5.innerHTML = p_n_clas_P2_2.toFixed(2)  + "  (%) ";
+        f_ran_cll2__R6.innerHTML = avr_n_clas_P2;
+        f_ran_cll2__R7.innerHTML = rank_p2;
+
+
+
+
+
 
 
 
