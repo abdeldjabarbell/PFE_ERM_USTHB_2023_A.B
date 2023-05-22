@@ -1554,6 +1554,85 @@ padding: 40px;
 
 
 
+/*--------------------------------------------------------------------------------------*/
+#senarios_rankin{
+    position: relative;
+    height: 86%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.657);   
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+#rankin_raw{
+    position: relative;
+    height: 86%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.657);   
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+#rankin_frequency_bulk{
+    position: relative;
+    height: 86%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.657);   
+    backdrop-filter: blur(7px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.development_process{
+    margin-left: 40px;
+    color: #ff0000;
+    display: flex;
+}
+.loading-circle {
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid #939393;
+    border-top-color: #00e1ff;
+    animation: spin 1s infinite linear;
+    margin-left: 10px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1595,6 +1674,8 @@ padding: 40px;
  display: flex;
  flex-direction: column;
  }
+
+ 
  .av_clas h1{
     color: white;
 
@@ -1673,4 +1754,3 @@ padding: 40px;
     background-color: rgba(255, 0, 221, 0);
  }
  
-
