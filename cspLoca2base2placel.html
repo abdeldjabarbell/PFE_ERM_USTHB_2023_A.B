@@ -552,6 +552,33 @@
                   
               
               </section>
+
+              <section id="khat_top">
+                <i class="kha_t_top"></i>
+               </section> 
+
+              <section id="inputbox_pourcentage_x_back">
+                <div class="inputbox_pourcentage_x">
+                  <div class="x_div">
+                    <input type="number" id="x_1" required >
+                    <label>x1(%)</label>
+                  </div>
+                  <div class="x_div">
+                    <input type="number" id="x_2" required>
+                    <label>x2(%)</label>
+                  </div>
+                  <div class="x_div">
+                    <input type="number" id="x_3" required>
+                    <label>x3(%)</label>
+                  </div>
+                  <div class="x_div">
+                    <input type="number" id="x_4" required>
+                    <label>x4(%)</label>
+                  </div>
+ 
+                
+                </div>
+              </section>
               
               <section id="submit-">
                   <div class="submit-btn">
@@ -1125,75 +1152,79 @@
         <section id="rankin_raw">
           <div class="rankin_back">
             <h1>rankin rank (raw)</h1><rb>
-            <div class="development_process">
-              <h3> in the process of development ..... !</h3>
-              <div class="loading-circle"></div>
-            </div>
+              <div class="back_rank_brut">
+
+                <div class="class_back_rank_brut">
+                  
+                           
+                  <div class="class_back_rank_brut_loca1_classement">
+                    <div id="class_back_rank_brut_n_loca1_classement_">
+                      <div id="class_back_rank_brut_numero_de_location1"></div>
+
+                    </div>
+
+
+                    <div id="class_back_rank_brut_class_loca1_classement_">
+                      <div id="class_back_rank_brut_le_nome_loca_1"></div>
+                    </div>
+                  </div>
+
+
+                  <div class="class_back_rank_brut_loca2_classement">
+                    <div id="class_back_rank_brut_n_loca2_classement_">
+                      <div id="class_back_rank_brut_numero_de_location2"></div>
+
+
+                    </div>
+                    <div id="class_back_rank_brut_class_loca2_classement_">
+                      <div id="class_back_rank_brut_le_nome_loca_2"></div>
+
+                    </div>
+                  </div>
+
+               
+
+                  
+
+                </div>
+                <div class="table_back_rank_brut">
+                  <table>
+                    <thead>
+                        <tr>
+                            <th>.  locations  .</th>
+                            <th>.  DNI  .</th>
+                            <th>.  %  .</th>
+                            <th>.  normal rank  .</th>
+                            <th id="x_1_re">.  rank X1  .</th>
+                            <th id="x_2_re">.  rank X2  .</th>
+                            <th id="x_3_re">.  rank X3  .</th>
+                            <th id="x_4_re">.  rank X4  .</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="table_back_rank_brut_content">
+                    </tbody>
+                  </table> 
+                  
+
+                </div>
+
+              </div>
+
           </div>
 
         </section>
 
 
-              <section class="khat">
-                <i class="kha_t"></i>
-            </section> 
-
 
 
             <section class="khat">
               <i class="kha_t"></i>
           </section> 
 
-          <section id="senarios_rankin">
-            <div class="rankin_back">
-              <h1>senarios of rankin</h1><rb>
-              <div class="development_process">
-                <h3> in the process of development ..... !</h3>
-                <div class="loading-circle"></div>
-              </div>
-            </div>
-          </section>
-
-            <section class="khat">
-              <i class="kha_t"></i>
-          </section> 
-
-            <section id="classement">
-              <div class="av_clas">
-                <h1>AVERAGE RANK</h1>
-                <div class="background_classement">
-                  <div class="class">
-                    <div class="class1">
-                      <div id="name1_class">
-                        <div class="loading-circle"></div>
-                      </div>
-                      <div id="number1_class">
-                        <div class="loading-circle"></div>
-                      </div>
-                    </div>
-                    <div class="class2">
-                      <div id="name2_class">
-                        <div id="name2">
-                          <div class="loading-circle"></div>
-                        </div>
-                      </div>
-                      <div id="number2_class">
-                        <div id="number2">
-                          <div class="loading-circle"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="discreption">
-                    <div class="loading-circle"></div>
 
 
-                  </div>
-                </div>
 
-
-              </div>
-            </section>
 
             <section class="khat">
               <i class="kha_t"></i>
@@ -1385,9 +1416,16 @@ menuSearch.addEventListener("click", function() {
       var D2P2november = parseInt(document.getElementById("D2P2november").value);
       var D2P2december = parseInt(document.getElementById("D2P2december").value);
 
+
+      var x_1 = parseInt(document.getElementById("x_1").value);
+      var x_2 = parseInt(document.getElementById("x_2").value);
+      var x_3 = parseInt(document.getElementById("x_3").value);
+      var x_4 = parseInt(document.getElementById("x_4").value);
+
       
 
-      //alert bar
+
+//alert bar
       
 if (Nplace1 === ""){
     alert("Please enter a valid Location name << location 1 >>");
@@ -1447,7 +1485,22 @@ if (Nplace1 === ""){
     return;
   }
 
+  // x
 
+  if (isNaN(x_1) || isNaN(x_2)|| isNaN(x_3)|| isNaN(x_4)){
+    alert("Please enter a valid X% ...");
+    return;
+  }
+
+
+
+
+
+
+
+
+
+      
 
       var schedule = document.getElementById("schedule");
       schedule.innerHTML = "";
@@ -3780,7 +3833,7 @@ DATA2.innerHTML=P1Ndatabase2
 
 
 
-if(rank_p1>rank_p2){
+if(rank_p1<rank_p2){
 xxx=50;
 yyy=90;
 rankin_frequency_rankle_nome_loca_2.innerHTML=Nplace2
@@ -3791,7 +3844,7 @@ rankin_frequency_ranknumero_de_location1.innerHTML="RANK -1-"
 
 
 }
-if(rank_p1<rank_p2){
+if(rank_p1>rank_p2){
 yyy=50;
 xxx=90;
 rankin_frequency_rankle_nome_loca_2.innerHTML=Nplace2
@@ -3856,6 +3909,181 @@ var rankin_frequency_table_content = document.getElementById("rankin_frequency_t
         f_ran_cll2__R5.innerHTML = p_n_clas_P2_2.toFixed(2)  + "  (%) ";
         f_ran_cll2__R6.innerHTML = avr_n_clas_P2;
         f_ran_cll2__R7.innerHTML = rank_p2;
+
+
+
+// classmen brut + %rankin
+
+
+
+if(SP1>SP2){
+  classp1 = 1;
+  classp2 = 2;
+  major =SP1;
+}
+if(SP1<SP2){
+  classp1 = 2;
+  classp2 = 1;
+
+  major =SP2;
+}
+if(SP1 === SP2){
+  classp1= 1;
+  classp2= 1;
+
+  major =SP1;
+}
+
+marg_pourcentage_P1 = 100*(major-SP1)/major;
+marg_pourcentage_P2 = 100*(major-SP2)/major;
+
+
+// ...............X1
+
+
+
+
+
+
+if(marg_pourcentage_P1<x_1){p1_class_pourx1=1;} if(marg_pourcentage_P1>x_1){p1_class_pourx1=2;}
+if(marg_pourcentage_P2<x_1){p2_class_pourx1=1;} if(marg_pourcentage_P2>x_1){p2_class_pourx1=2;}
+//:::::::::::::::::::::::::::::::::::::
+if(marg_pourcentage_P1<x_2){p1_class_pourx2=1;} if(marg_pourcentage_P1>x_2){p1_class_pourx2=2;}
+if(marg_pourcentage_P2<x_2){p1_class_pourx2=1;} if(marg_pourcentage_P1>x_2){p1_class_pourx2=2;}
+if(marg_pourcentage_P2<x_2){p2_class_pourx2=1;} if(marg_pourcentage_P2>x_2){p2_class_pourx2=2;}
+if(marg_pourcentage_P2<x_2){p2_class_pourx2=1;} if(marg_pourcentage_P2>x_2){p2_class_pourx2=2;}
+//:::::::::::::::::::::::::::::::::::::
+if(marg_pourcentage_P1<x_3){p1_class_pourx3=1;} if(marg_pourcentage_P1>x_3){p1_class_pourx3=2;}
+if(marg_pourcentage_P1<x_3){p1_class_pourx3=1;} if(marg_pourcentage_P1>x_3){p1_class_pourx3=2;}
+if(marg_pourcentage_P2<x_3){p2_class_pourx3=1;} if(marg_pourcentage_P2>x_3){p2_class_pourx3=2;}
+if(marg_pourcentage_P2<x_3){p2_class_pourx3=1;} if(marg_pourcentage_P2>x_3){p2_class_pourx3=2;}
+//:::::::::::::::::::::::::::::::::::::
+if(marg_pourcentage_P1<x_4){p1_class_pourx4=1;} if(marg_pourcentage_P1>x_4){p1_class_pourx4=2;}
+if(marg_pourcentage_P1<x_4){p1_class_pourx4=1;} if(marg_pourcentage_P1>x_4){p1_class_pourx4=2;}
+if(marg_pourcentage_P2<x_4){p2_class_pourx4=1;} if(marg_pourcentage_P2>x_4){p2_class_pourx4=2;}
+if(marg_pourcentage_P2<x_4){p2_class_pourx4=1;} if(marg_pourcentage_P2>x_4){p2_class_pourx4=2;}
+
+
+
+
+
+//tank------------------------------------------------------
+
+
+
+//rank_rankin_n_clas_P1_1
+
+var class_back_rank_brut_n_loca1_classement_ = document.getElementById("class_back_rank_brut_n_loca1_classement_");
+var class_back_rank_brut_n_loca2_classement_ = document.getElementById("class_back_rank_brut_n_loca2_classement_");
+
+var class_back_rank_brut_numero_de_location1 = document.getElementById("class_back_rank_brut_numero_de_location1");
+var class_back_rank_brut_le_nome_loca_1 = document.getElementById("class_back_rank_brut_le_nome_loca_1");
+
+var class_back_rank_brut_numero_de_location2 = document.getElementById("class_back_rank_brut_numero_de_location2");
+var class_back_rank_brut_le_nome_loca_2 = document.getElementById("class_back_rank_brut_le_nome_loca_2");
+
+
+x_1_re.innerHTML=" rank in "+x_1.toFixed(2)  + "  (%) " ;
+x_2_re.innerHTML=" rank in "+x_2.toFixed(2)  + "  (%) " ;
+x_3_re.innerHTML=" rank in "+x_3.toFixed(2)  + "  (%) " ;
+x_4_re.innerHTML=" rank in "+x_4.toFixed(2)  + "  (%) " ;
+
+
+
+
+
+
+
+if(SP1>SP2){
+xxxx=50;
+yyyy=90;
+class_back_rank_brut_le_nome_loca_2.innerHTML=Nplace2
+class_back_rank_brut_numero_de_location2.innerHTML="RANK -2-"
+
+class_back_rank_brut_le_nome_loca_1.innerHTML=Nplace1
+class_back_rank_brut_numero_de_location1.innerHTML="RANK -1-"
+
+
+}
+if(SP1<SP2){
+yyyy=50;
+xxxx=90;
+class_back_rank_brut_le_nome_loca_2.innerHTML=Nplace2
+class_back_rank_brut_numero_de_location2.innerHTML="RANK -1-"
+
+class_back_rank_brut_le_nome_loca_1.innerHTML=Nplace1
+class_back_rank_brut_numero_de_location1.innerHTML="RANK -2-"
+}
+if(SP1==SP2){
+xxxx=50;
+yyyy=50;
+class_back_rank_brut_le_nome_loca_2.innerHTML=Nplace2
+class_back_rank_brut_numero_de_location2.innerHTML="RANK -1-"
+
+class_back_rank_brut_le_nome_loca_1.innerHTML=Nplace1
+class_back_rank_brut_numero_de_location1.innerHTML="RANK -1-"
+}
+class_back_rank_brut_n_loca2_classement_.style.height = xxxx +"%";
+class_back_rank_brut_n_loca1_classement_.style.height = yyyy +"%";
+
+
+
+
+
+
+
+//table -------------------------------------------------
+
+var table_back_rank_brut_content = document.getElementById("table_back_rank_brut_content");
+    table_back_rank_brut_content.innerHTML = "";
+
+
+        var f_ran_row__R1 = table_back_rank_brut_content.insertRow();
+        var f_ran_cll1__R1 = f_ran_row__R1.insertCell(0);
+        var f_ran_cll1__R2 = f_ran_row__R1.insertCell(1);
+        var f_ran_cll1__R3 = f_ran_row__R1.insertCell(2);
+        var f_ran_cll1__R4 = f_ran_row__R1.insertCell(3);
+        var f_ran_cll1__R5 = f_ran_row__R1.insertCell(4);
+        var f_ran_cll1__R6 = f_ran_row__R1.insertCell(5);
+        var f_ran_cll1__R7 = f_ran_row__R1.insertCell(6);
+        var f_ran_cll1__R8 = f_ran_row__R1.insertCell(7);
+
+
+
+        f_ran_cll1__R1.innerHTML = Nplace1 ;
+        f_ran_cll1__R2.innerHTML = SP1;
+        f_ran_cll1__R3.innerHTML = marg_pourcentage_P1.toFixed(2)  + "  (%) " ;
+        f_ran_cll1__R4.innerHTML = classp1;
+        f_ran_cll1__R5.innerHTML = p1_class_pourx1;
+        f_ran_cll1__R6.innerHTML = p1_class_pourx2;
+        f_ran_cll1__R7.innerHTML = p1_class_pourx3;
+        f_ran_cll1__R8.innerHTML = p1_class_pourx4;
+
+
+
+
+
+        var f_ran_row__R2 = table_back_rank_brut_content.insertRow();
+        var f_ran_cll2__R1 = f_ran_row__R2.insertCell(0);
+        var f_ran_cll2__R2 = f_ran_row__R2.insertCell(1);
+        var f_ran_cll2__R3 = f_ran_row__R2.insertCell(2);
+        var f_ran_cll2__R4 = f_ran_row__R2.insertCell(3);
+        var f_ran_cll2__R5 = f_ran_row__R2.insertCell(4);
+        var f_ran_cll2__R6 = f_ran_row__R2.insertCell(5);
+        var f_ran_cll2__R7 = f_ran_row__R2.insertCell(6);
+        var f_ran_cll2__R8 = f_ran_row__R2.insertCell(7);
+
+
+
+        f_ran_cll2__R1.innerHTML = Nplace2 ;
+        f_ran_cll2__R2.innerHTML = SP2 ;
+        f_ran_cll2__R3.innerHTML = marg_pourcentage_P2.toFixed(2)  + "  (%) "  ;
+        f_ran_cll2__R4.innerHTML = classp2;
+        f_ran_cll2__R5.innerHTML = p2_class_pourx1;
+        f_ran_cll2__R6.innerHTML = p2_class_pourx2;
+        f_ran_cll2__R7.innerHTML = p2_class_pourx3;
+        f_ran_cll2__R8.innerHTML = p2_class_pourx4;
+
 
 
 
