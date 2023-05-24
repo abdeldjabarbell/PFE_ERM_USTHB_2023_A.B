@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
 
 
@@ -305,6 +306,7 @@ header{
 }
 
 .homePageDemare .demareBckground .demareBtns .offlineBtn .offline{
+    top: 300px;
     padding: 20px 14px;
     border-radius: 10px;
     background: linear-gradient(90deg ,rgba(0, 0, 0, 0.45), rgba(48, 0, 0, 0.45) ,rgba(102, 0, 0, 0.45),rgba(131, 1, 1, 0.45),rgba(78, 0, 0, 0.45),rgba(66, 0, 0, 0.45),rgba(32, 0, 0, 0.45),rgba(0, 0, 0, 0.45));
@@ -347,10 +349,9 @@ header{
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin: 30px;
 }
 .chooseBox .CSPbtn .CSP{
-    padding: 20px 14px;
+    padding: 20px 15px;
     border-radius: 10px;
     background: linear-gradient(90deg ,rgba(0, 0, 0, 0.45), rgba(48, 0, 0, 0.45) ,rgba(102, 0, 0, 0.45),rgba(131, 1, 1, 0.45),rgba(78, 0, 0, 0.45),rgba(66, 0, 0, 0.45),rgba(32, 0, 0, 0.45),rgba(0, 0, 0, 0.45));
     background-size: 400%;
@@ -360,7 +361,7 @@ header{
 
 }
 .chooseBox .PVbtn .PV{
-    padding: 20px 14px;
+    padding: 20px 15px;
     border-radius: 10px;
     background: linear-gradient(90deg ,rgba(0, 0, 0, 0.45), rgba(48, 0, 0, 0.45) ,rgba(102, 0, 0, 0.45),rgba(131, 1, 1, 0.45),rgba(78, 0, 0, 0.45),rgba(66, 0, 0, 0.45),rgba(32, 0, 0, 0.45),rgba(0, 0, 0, 0.45));
     background-size: 400%;
@@ -382,7 +383,7 @@ header{
 
 .menuprojects{
     position: absolute;
-    height: 30%;
+    height: 200px;
     width: 80%;
     top: 30%;
     backdrop-filter: blur(0px);
@@ -394,7 +395,7 @@ header{
 
 .offline-menu{
     position: absolute;
-    height: 100%;
+    height: 80%;
     width: 60%;
     background: linear-gradient(90deg ,rgba(0, 0, 0, 0.45), rgba(48, 0, 0, 0.45) ,rgba(102, 0, 0, 0.45),rgba(131, 1, 1, 0.45),rgba(78, 0, 0, 0.45),rgba(66, 0, 0, 0.45),rgba(32, 0, 0, 0.45),rgba(0, 0, 0, 0.45));
     right:0;
@@ -403,13 +404,13 @@ header{
     border-radius: 10px;
     animation: animat 10s linear infinite;
     transition: all 0.5s ease;
-    margin-top: -500px;
+    margin-top: -1000px;
 
 
 }
 .online-menu{
     position: absolute;
-    height: 100%;
+    height: 80%;
     width: 35%;
     background: linear-gradient(90deg ,rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ,rgba(0, 46, 0, 0.45),rgba(19, 56, 0, 0.45),rgba(0, 74, 2, 0.45),rgba(0, 39, 0, 0.45),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45) );
     left: 0;
@@ -418,7 +419,7 @@ header{
     border-radius: 10px;
     animation: animat 10s linear infinite;
     transition: all 0.5s ease;
-    margin-top: -500px;
+    margin-top: -1000px;
 
 
    
@@ -468,7 +469,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -800px;
+    margin-top: -1000px;
 
 }
 .Selector_menu_CSP_off{
@@ -582,7 +583,7 @@ width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -800px;
+    margin-top: -1000px;
 
 }
 .Selector_menu_pv_off{
@@ -1340,7 +1341,7 @@ margin: 40px 0;
 
 
 
-@media screen and (max-width:100px) { 
+@media screen and (max-width:441px) { 
     
      .navbar .menu{
         display: none;
